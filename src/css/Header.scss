@@ -1,0 +1,54 @@
+$defaultColor: black;
+$defaultFont: Arial;
+
+body{
+    margin:0;
+    padding:0;
+}
+.button{
+    color:$defaultColor;
+    margin:0 auto;
+    padding:0;
+    border:0;
+    background-color: transparent;
+    
+    a{
+        text-decoration: none;
+        margin:0 auto;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+        color:$defaultColor;
+        width:100%;
+        font-size:20px;
+        transition-duration: 1s;
+    }
+
+    a:visited{
+        color:inherit;
+    }
+
+    a:hover{
+        color:red;
+        border-bottom: 1px solid $defaultColor;
+    }
+}
+.nav{
+    width:40%;
+    float:right;
+    display:flex;
+    border:0;
+}
+.logo{
+    float:left;
+    width:60%;
+    color:black;
+    margin-left:1%;
+}
+.header{
+    width:100%;
+    display:flex;
+}
+.home{
+    color:red;
+}

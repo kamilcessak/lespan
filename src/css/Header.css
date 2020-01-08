@@ -27,7 +27,7 @@ body {
   }
   .button a {
     text-decoration: none;
-    margin: 0 auto;
+    margin: 2%;
     padding: 0;
     justify-content: center;
     display: flex;
@@ -35,6 +35,9 @@ body {
     width: 100%;
     font-size: 20px;
     transition-duration: 0.75s;
+  }
+  .button .active {
+    border-bottom: 1px solid black;
   }
   .button a:hover {
     color: red;
@@ -73,24 +76,22 @@ body {
     padding: 0;
     justify-content: center;
     display: flex;
-    flex-direction: column;
     color: black;
     width: 100%;
     font-size: 20px;
-    transition-duration: 0.5s;
-  }
-  .button a:visited {
-    color: inherit;
+    transition-duration: 0.75s;
   }
   .button a:hover {
     color: red;
-    border-bottom: 1px solid black;
-    transition-duration: 0.5s;
+  }
+  .button a:visited {
+    color: inherit;
   }
 }
 .header {
   width: 100%;
   display: flex;
+  border-bottom: 1px solid black;
 }
 
 .home {

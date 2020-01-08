@@ -29,7 +29,7 @@ body{
         
         a{
             text-decoration: none;
-            margin:0 auto;
+            margin:2%;
             padding: 0;
             justify-content: center;
             display: flex;
@@ -37,8 +37,13 @@ body{
             width:100%;
             font-size:20px;
             transition-duration: 0.75s;
+            
         }
         
+        .active{
+            border-bottom: 1px solid $defaultColor;
+        }
+
         a:hover{
             color:red;
         }
@@ -80,27 +85,25 @@ body{
             padding: 0;
             justify-content: center;
             display: flex;
-            flex-direction: column;
             color:$defaultColor;
             width:100%;
             font-size:20px;
-            transition-duration: 0.5s;
+            transition-duration: 0.75s;
         }
-    
-        a:visited{
-            color:inherit;
-        }
-    
+        
         a:hover{
             color:red;
-            border-bottom: 1px solid $defaultColor;
-            transition-duration: 0.5s;
+        }
+
+        a:visited{
+            color:inherit;
         }
     }
 }
 .header{
     width:100%;
     display:flex;
+    border-bottom: 1px solid $defaultColor;
 }
 .home{
     color:red;

@@ -3,46 +3,91 @@ body {
   padding: 0;
 }
 
-.button {
-  color: black;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-.button a {
-  text-decoration: none;
-  margin: 0 auto;
-  padding: 0;
-  justify-content: center;
-  display: flex;
-  color: black;
-  width: 100%;
-  font-size: 20px;
-  transition-duration: 1s;
-}
-.button a:visited {
-  color: inherit;
-}
-.button a:hover {
-  color: red;
-  border-bottom: 1px solid black;
-}
+@media screen and (min-width: 600px) {
+  .nav {
+    width: 40%;
+    float: right;
+    display: flex;
+    border: 0;
+  }
 
-.nav {
-  width: 40%;
-  float: right;
-  display: flex;
-  border: 0;
-}
+  .logo {
+    float: left;
+    width: 60%;
+    color: black;
+    margin-left: 1%;
+  }
 
-.logo {
-  float: left;
-  width: 60%;
-  color: black;
-  margin-left: 1%;
+  .button {
+    color: black;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  .button a {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    transition-duration: 0.75s;
+  }
+  .button a:hover {
+    color: red;
+  }
+  .button a:visited {
+    color: inherit;
+  }
 }
+@media screen and (max-width: 599px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .nav {
+    width: 100%;
+    border: 0;
+  }
+
+  .logo {
+    width: 100%;
+    color: black;
+    margin-left: 1%;
+  }
+
+  .button {
+    color: black;
+    margin: 0 auto;
+    padding: 1%;
+    border: 0;
+    background-color: transparent;
+  }
+  .button a {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+    font-size: 20px;
+    transition-duration: 0.5s;
+  }
+  .button a:visited {
+    color: inherit;
+  }
+  .button a:hover {
+    color: red;
+    border-bottom: 1px solid black;
+    transition-duration: 0.5s;
+  }
+}
 .header {
   width: 100%;
   display: flex;

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import '../css/Header.css';
+import {BasicTitle} from './Basics';
 
 class Header extends Component{
     render(){
         return(
             <div className="header">
                 <div className="logo">
-                    <h1>LESPAN.PL</h1>
+                    <BasicTitle title="LESPAN.PL" />
                 </div>
                 <nav className="nav">
                     <button className="button">

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BasicImg} from './Basics';
 import '../css/Main.css';
 import Description from './Description';
+import Services from './Services';
+import Price from './Price';
 
 class Main extends Component{
     render(){
@@ -11,8 +13,14 @@ class Main extends Component{
                     <BasicImg url={'./img/banner1a.png'} title={'Banner Strony'} />
                     <BasicImg url={'./img/banner2a.png'} title={'Banner Strony'} />
                 </div>
-                <div id="home" className="description">
+                <div id="desc" className="description">
                     <Description />
+                </div>
+                <div id="services" className="services">
+                    <Services />
+                </div>
+                <div id="price" className="price">
+                    <Price />
                 </div>
             </div>
         );

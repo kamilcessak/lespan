@@ -1,11 +1,150 @@
+/* GLOBAL SECTION */
+.bold{
+    font-weight: bold;
+}
+
+/* BANNER SECTION */
 .banner{
     width:100%;
     margin:0 auto;
     text-align: center;
+    display:flex;
 }
+
+/* DESCRIPTION JS SECTION */
 .description{
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+
     h1{
-        font-size: 50px;
+        font-size: 70px;
         text-align: center;
+        text-shadow: 2px 2px grey;
+        width:100%;
+    }
+
+    .ceo{
+        width:75%;
+        text-align: center;
+        font-size: 45px;
+        margin:0 auto;
+
+        @media screen and (max-width:599px){
+            display:flex;
+            flex-direction: column;
+
+            img{
+                border:0px;
+                width:50%;
+                margin:0 auto;
+            }
+
+            article{
+                width:100%;
+            }
+        }
+
+        @media screen and (min-width:600px){
+            display:flex;
+            flex-direction: row;
+
+            img{
+                border:0px;
+                width:20%;
+            }
+
+            article{
+                width:80%;
+            }
+        }
+
+        article{
+            margin:0 auto;
+        }
+    }
+}
+
+/* SERVICES JS SECTION */
+.services{
+    width:100%;
+    background-color: white;
+
+    p{
+        font-size: 1.5em;
+    }
+
+    .ourServices{
+        font-size:30px;
+        text-align: center;
+        @media screen and (max-width:599px){
+            .serviceDescription{
+                flex-direction: column;
+                
+                .serviceBlock{
+                    width:100%;
+                }
+            }
+        }
+        @media screen and (min-width:600px){
+            .serviceDescription{
+                flex-direction: row;
+                display: inline-flex;
+
+                .serviceBlock{
+                    width:50%;
+                }
+            }
+        }
+
+        .serviceDescription{
+            width:100%;
+            display:flex
+        }
+        .serviceBlock{
+            ul{
+                display:flex;
+                padding:0;
+                flex-direction: column;
+                li{
+                    text-align: center;
+                    margin:0 auto;
+                    padding:10px;
+                }
+            }
+        }
+    }
+}
+
+/* PRICE JS SECTION */
+.price{
+    background-color: silver;
+    width:100%;
+    text-align: center;
+
+    p{
+        font-size: 45px;
+        padding:1%;
+    }
+
+    .contactButton{
+        text-decoration: none;
+        color:black;
+        transition-duration: 0.25s;
+        padding:5px;
+        border:1px solid black;
+        border-radius: 10%;
+        background-color: white;
+    }
+
+    .contactButton:visited{
+            color:black;
+    }
+
+    .contactButton:hover{
+        color:red;
+        border:1px solid red;
     }
 }

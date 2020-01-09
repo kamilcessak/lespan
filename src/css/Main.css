@@ -1,12 +1,136 @@
+/* GLOBAL SECTION */
+.bold {
+  font-weight: bold;
+}
+
+/* BANNER SECTION */
 .banner {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
 }
 
+/* DESCRIPTION JS SECTION */
+.description {
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
 .description h1 {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
+  text-shadow: 2px 2px grey;
+  width: 100%;
+}
+.description .ceo {
+  width: 75%;
+  text-align: center;
+  font-size: 45px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  .description .ceo {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .ceo img {
+    border: 0px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .description .ceo article {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .description .ceo {
+    display: flex;
+    flex-direction: row;
+  }
+  .description .ceo img {
+    border: 0px;
+    width: 20%;
+  }
+  .description .ceo article {
+    width: 80%;
+  }
+}
+.description .ceo article {
+  margin: 0 auto;
+}
+
+/* SERVICES JS SECTION */
+.services {
+  width: 100%;
+  background-color: white;
+}
+.services p {
+  font-size: 1.5em;
+}
+.services .ourServices {
+  font-size: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .services .ourServices .serviceDescription {
+    flex-direction: column;
+  }
+  .services .ourServices .serviceDescription .serviceBlock {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .services .ourServices .serviceDescription {
+    flex-direction: row;
+    display: inline-flex;
+  }
+  .services .ourServices .serviceDescription .serviceBlock {
+    width: 50%;
+  }
+}
+.services .ourServices .serviceDescription {
+  width: 100%;
+  display: flex;
+}
+.services .ourServices .serviceBlock ul {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+}
+.services .ourServices .serviceBlock ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* PRICE JS SECTION */
+.price {
+  background-color: silver;
+  width: 100%;
+  text-align: center;
+}
+.price p {
+  font-size: 45px;
+  padding: 1%;
+}
+.price .contactButton {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.25s;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: white;
+}
+.price .contactButton:visited {
+  color: black;
+}
+.price .contactButton:hover {
+  color: red;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=Main.css.map */

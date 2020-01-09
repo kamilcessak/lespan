@@ -11,17 +11,17 @@ class Header extends Component{
                 </div>
                 <nav className="nav">
                     <button className="button">
-                        <a href="#home">
+                        <a href="#">
                             Home
                         </a>
                     </button>
                     <button className="button">
-                        <a href="#">
+                        <a href="#desc">
                             O nas
                         </a>
                     </button>
                     <button className="button">
-                        <a href="#">
+                        <a href="#services">
                             Usługi
                         </a>
                     </button>

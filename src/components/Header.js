@@ -11,7 +11,7 @@ class Header extends Component{
                 </div>
                 <nav className="nav">
                     <button className="button">
-                        <a href="#">
+                        <a href="#home">
                             Home
                         </a>
                     </button>

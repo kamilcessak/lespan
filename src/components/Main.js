@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import {BasicImg} from './Basics';
 
 class Main extends Component{
     render(){
         return(
-            <h1>Hejka Naklejka</h1>
+            <div className="banner">
+                <BasicImg url={'./img/bannerImg.jpg'} title={'Banner Strony'} />
+            </div>
         );
     }
 }

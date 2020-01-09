@@ -16,3 +16,13 @@ export class BasicTitle extends Component{
         );
     }
 }
+
+export class BasicImg extends Component{
+    render(){
+        return(
+            <div className="bannerB">
+                <img src={this.props.url} alt={this.props.title} />
+            </div>
+        );
+    }
+}

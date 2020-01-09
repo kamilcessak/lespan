@@ -2,4 +2,13 @@ hr {
   background-color: black;
 }
 
+.bannerB {
+  display: flex;
+}
+
+.bannerB img {
+  width: 50%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=Basics.css.map */

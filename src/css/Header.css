@@ -34,16 +34,6 @@ body {
     color: black;
     width: 100%;
     font-size: 20px;
-    transition-duration: 0.75s;
-  }
-  .button .active {
-    border-bottom: 1px solid black;
-  }
-  .button a:hover {
-    color: red;
-  }
-  .button a:visited {
-    color: inherit;
   }
 }
 @media screen and (max-width: 599px) {
@@ -80,13 +70,6 @@ body {
     color: black;
     width: 100%;
     font-size: 20px;
-    transition-duration: 0.75s;
-  }
-  .button a:hover {
-    color: red;
-  }
-  .button a:visited {
-    color: inherit;
   }
 }
 .header {
@@ -96,6 +79,16 @@ body {
 
 .home {
   color: red;
+}
+
+.button :hover {
+  color: red;
+}
+.button :visited {
+  color: inherit;
+}
+.button :active {
+  color: purple;
 }
 
 /*# sourceMappingURL=Header.css.map */

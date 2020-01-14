@@ -9,4 +9,12 @@ img {
   border-top: 1px solid black;
 }
 
+.importantColor {
+  color: red;
+}
+
+.importantStyle {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=Basics.css.map */

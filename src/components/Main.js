@@ -4,6 +4,7 @@ import '../css/Main.css';
 import Description from './Description';
 import Services from './Services';
 import Price from './Price';
+import OurJobs from './OurJobs';
 
 class Main extends Component{
     render(){
@@ -21,6 +22,9 @@ class Main extends Component{
                 </div>
                 <div id="price" className="price">
                     <Price />
+                </div>
+                <div id="ourJobs" className="ourJobs">
+                    <OurJobs />
                 </div>
             </div>
         );

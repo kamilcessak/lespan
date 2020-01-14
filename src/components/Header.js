@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/Header.css';
 import {BasicTitle} from './Basics';
 
-class Header extends Component{
+export default class Header extends Component{
     render(){
         return(
             <div className="header">
@@ -26,7 +26,7 @@ class Header extends Component{
                         </a>
                     </button>
                     <button className="button">
-                        <a href="#">
+                        <a href="#price">
                             Cennik
                         </a>
                     </button>
@@ -40,5 +40,3 @@ class Header extends Component{
         );
     }
 }
-
-export default Header;

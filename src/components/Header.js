@@ -31,7 +31,12 @@ export default class Header extends Component{
                         </a>
                     </button>
                     <button className="button">
-                        <a href="#">
+                        <a href="#gallery">
+                            Galeria
+                        </a>
+                    </button>
+                    <button className="button">
+                        <a href="#contact">
                             Kontakt
                         </a>
                     </button>

@@ -1,0 +1,43 @@
+.boldText {
+  font-weight: bold;
+}
+
+.contact {
+  width: 100%;
+  margin-top: 1%;
+}
+.contact .contactBlock {
+  width: 100%;
+  display: flex;
+}
+.contact .contactBlock form {
+  width: 50%;
+}
+.contact .contactBlock form h4 {
+  font-size: xx-large;
+  text-align: center;
+}
+.contact .contactBlock .contactInfo {
+  width: 50%;
+}
+.contact .contactBlock .contactInfo h4 {
+  font-size: xx-large;
+  margin-left: 1%;
+}
+.contact .contactBlock .contactInfo .contactInfoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact .contactBlock .contactInfo .contactImg {
+  width: 10%;
+}
+.contact .contactBlock .contactInfo .contactImg img {
+  width: 100%;
+  border: 0px;
+}
+.contact .contactBlock .contactInfo .contactText {
+  width: 90%;
+}
+
+/*# sourceMappingURL=Contact.css.map */

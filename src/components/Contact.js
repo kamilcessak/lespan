@@ -36,13 +36,16 @@ export default class Contact extends Component{
                     </div>
                     <form action="email.php" method="POST">
                         <h4>Formularz Kontaktowy:</h4>
-                        <label for="firstName">Imię:</label><br /><input name="firstName" type="text"></input><br />
-                        <label for="lastName">Nazwisko:</label><br /><input name="lastName" type="text"></input><br />
-                        <label for="email">E-mail:</label><br /><input name="email" type="text"></input><br />
-                        <label for="phone">Telefon:</label><br /><input name="phone" type="text"></input><br />
-                        <label for="textArea">Wiadomość</label><br /><textarea name="textArea"></textarea>
-                        <button type="submit">Wyślij</button>
+                        <label>Imię:</label><br /><input name="firstName" type="text" placeholder="Jan"></input><br />
+                        <label>Nazwisko:</label><br /><input name="lastName" type="text" placeholder="Kowalski"></input><br />
+                        <label>E-mail:</label><br /><input name="email" type="text" placeholder="jan.kowalski@example.pl"></input><br />
+                        <label>Telefon:</label><br /><input name="phone" type="text" placeholder="000 000 000"></input><br />
+                        <label>Wiadomość:</label><br /><textarea name="message" placeholder="Napisz do nas !"></textarea><br />
+                        <input type="submit" name="submit" className="sent" value="Wyślij"></input>
                     </form>
+                </div>
+                <div className="created">
+                    <h2>© Website designed and created by. Kamil Cessak</h2>
                 </div>
             </div>
         );

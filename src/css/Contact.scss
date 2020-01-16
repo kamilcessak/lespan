@@ -5,22 +5,85 @@
 .contact{
     width:100%;
     margin-top:1%;
+    background-color: #F0EAD6;
 
     .contactBlock{
         width:100%;
         display:flex;
 
+        @media screen and (min-width:600px){
+            flex-direction: row;
+
+            .contactInfo{
+                width:50%;
+            }
+
+            form{
+                width:50%;
+            }
+        }
+
+        @media screen and (max-width:599px){
+            flex-direction: column;
+
+            .contactInfo{
+                width:100%;
+            }
+
+            form{
+                width:100%;
+            }
+
+            .contactInfo{
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+
         form{
-            width:50%;
+            text-align: center;
+            margin:0 auto;
+            height:100%;
+
+            label{
+                font-size: x-large;
+            }
+
+            input{
+                padding:1%;
+            }
+            
+            textarea{
+                padding:2%;
+            }
+
+            label, input, textarea{
+                width:50%;
+                text-align: center;
+            }
 
             h4{
                 font-size: xx-large;
                 text-align: center;
             }
+
+            .sent{
+                width:25%;
+                padding:1%;
+                border:1px solid black;
+                font-size: x-large;
+                margin-top: 1%;
+                transition: color 0.5s, border 0.5s;
+            }
+
+            .sent:hover{
+                color:red;
+                border:1px solid red;
+            }
         }
 
         .contactInfo{
-            width:50%;
 
             h4{
                 font-size:xx-large;
@@ -45,6 +108,17 @@
             .contactText{
                 width:90%;
             }
+        }
+    }
+
+    .created{
+        background-color: white;
+        
+        h2{
+            text-align: center;
+            font-style: italic;
+            padding-top:2%;
+            font-size:large;
         }
     }
 }

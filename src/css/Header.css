@@ -91,4 +91,15 @@ body {
   color: purple;
 }
 
+/* STICKY HEADER ON SCROLL */
+.header {
+  overflow: hidden;
+}
+
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /*# sourceMappingURL=Header.css.map */
